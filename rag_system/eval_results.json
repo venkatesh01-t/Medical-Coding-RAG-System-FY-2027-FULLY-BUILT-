@@ -1,0 +1,137 @@
+[
+  {
+    "question": "What is RAG?",
+    "type": "factual",
+    "expected": "Retrieval-Augmented Generation",
+    "got": "[S2] ## Learn more\n- LangGraph agentic RAG tutorial: https://docs.langchain.com/oss/python/langgraph/agentic-rag\n- LangChain RAG agent: https://docs.langchain.com/oss/python/langchain/rag\n- LlamaIndex",
+    "status": "answered",
+    "correct": false,
+    "time_s": 0.27
+  },
+  {
+    "question": "What is the purpose of chunking in a RAG system?",
+    "type": "factual",
+    "expected": "split documents",
+    "got": "[S1] Goal: build a RAG system whose hallucination is **as low as possible and measured**, and which says \"I don't have enough information\" when evidence is missing.\n\n[S1] ## Learning path\n| Level | # ",
+    "status": "answered",
+    "correct": false,
+    "time_s": 0.22
+  },
+  {
+    "question": "What is BM25?",
+    "type": "factual",
+    "expected": "keyword",
+    "got": "[S1] embed + BM25 this text\n```\n(Use a cheaper/smaller model for this indexing job and enable prompt caching; see the Anthropic post and cookbook.)\nWhen to skip: very small corpora where the whole kno",
+    "status": "answered",
+    "correct": false,
+    "time_s": 0.21
+  },
+  {
+    "question": "What is a vector store?",
+    "type": "factual",
+    "expected": "store",
+    "got": "[S1] Vector store = andha numbers-ah store panni \"idhukku nearest edhu\" nu seekiram kandupidikkura DB.\n\n[S2] ## Vector store choice\n| Option | Pick when | Notes |\n|---|---|---|\n| **pgvector** (Postgre",
+    "status": "answered",
+    "correct": true,
+    "time_s": 0.22
+  },
+  {
+    "question": "What does RRF stand for?",
+    "type": "exact",
+    "expected": "Reciprocal Rank Fusion",
+    "got": "[S1] ## Query transforms (use when eval shows query-side failures)\n| Technique | What it does | Use when |\n|---|---|---|\n| Rewrite / condense | Turn chat history + follow-up into a standalone query | ",
+    "status": "answered",
+    "correct": false,
+    "time_s": 0.21
+  },
+  {
+    "question": "What is the recommended chunk size range?",
+    "type": "factual",
+    "expected": "300",
+    "got": "I don't know. The documents I have don't contain enough information to answer this question.",
+    "status": "insufficient_context",
+    "correct": false,
+    "time_s": 0.0
+  },
+  {
+    "question": "What is the ABSTAIN response for?",
+    "type": "factual",
+    "expected": "insufficient",
+    "got": "I don't know. The documents I have don't contain enough information to answer this question.",
+    "status": "insufficient_context",
+    "correct": false,
+    "time_s": 0.0
+  },
+  {
+    "question": "What embedding model is used as a baseline in the skills?",
+    "type": "exact",
+    "expected": "bge-base",
+    "got": "[S1] **Simple-ah solna:** Embedding model = text-ah numbers-ah maathura machine.\n\n[S1] ## Embedding model\n- Use the **MTEB leaderboard** to shortlist, then **test on your own golden set**.\n\n[S1] - Goo",
+    "status": "answered",
+    "correct": true,
+    "time_s": 0.21
+  },
+  {
+    "question": "What is faithfulness in RAG evaluation?",
+    "type": "factual",
+    "expected": "supported",
+    "got": "I don't know. The documents I have don't contain enough information to answer this question.",
+    "status": "insufficient_context",
+    "correct": false,
+    "time_s": 0.21
+  },
+  {
+    "question": "What tool is recommended for parsing PDFs?",
+    "type": "exact",
+    "expected": "Docling",
+    "got": "I don't know. The documents I have don't contain enough information to answer this question.",
+    "status": "insufficient_context",
+    "correct": false,
+    "time_s": 0.0
+  },
+  {
+    "question": "What is the population of Chennai in 2026?",
+    "type": "unanswerable",
+    "expected": "NOT_IN_DOCS",
+    "got": "I don't know. The documents I have don't contain enough information to answer this question.",
+    "status": "insufficient_context",
+    "correct": true,
+    "time_s": 0.22
+  },
+  {
+    "question": "Who won the IPL 2025?",
+    "type": "unanswerable",
+    "expected": "NOT_IN_DOCS",
+    "got": "I don't know. The documents I have don't contain enough information to answer this question.",
+    "status": "insufficient_context",
+    "correct": true,
+    "time_s": 0.0
+  },
+  {
+    "question": "What is the price of a MacBook Pro in India?",
+    "type": "unanswerable",
+    "expected": "NOT_IN_DOCS",
+    "got": "I don't know. The documents I have don't contain enough information to answer this question.",
+    "status": "insufficient_context",
+    "correct": true,
+    "time_s": 0.2
+  },
+  {
+    "question": "How do I make biryani?",
+    "type": "unanswerable",
+    "expected": "NOT_IN_DOCS",
+    "got": "I don't know. The documents I have don't contain enough information to answer this question.",
+    "status": "insufficient_context",
+    "correct": true,
+    "time_s": 0.0
+  },
+  {
+    "question": "What is the best movie of 2024?",
+    "type": "unanswerable",
+    "expected": "NOT_IN_DOCS",
+    "got": "I don't know. The documents I have don't contain enough information to answer this question.",
+    "status": "insufficient_context",
+    "correct": true,
+    "time_s": 0.21
+  }
+]
